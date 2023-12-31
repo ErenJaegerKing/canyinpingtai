@@ -12,6 +12,7 @@ import java.time.LocalDateTime;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
+//实体,通常和数据库中的表对应
 public class Employee implements Serializable {
 
     private static final long serialVersionUID = 1L;

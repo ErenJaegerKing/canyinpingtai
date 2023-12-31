@@ -11,9 +11,13 @@ import java.io.Serializable;
  * 地址簿
  */
 @Data
+//用于自动生成类的 getter、setter、equals()、hashCode() 和 toString() 方法
 @Builder
+//可以为类生成一个内部静态类，用于链式构建对象的代码编写。
 @NoArgsConstructor
+//用于自动生成无参构造器
 @AllArgsConstructor
+//表示生成一个包含所有参数的全参构造器
 public class AddressBook implements Serializable {
 
     private static final long serialVersionUID = 1L;

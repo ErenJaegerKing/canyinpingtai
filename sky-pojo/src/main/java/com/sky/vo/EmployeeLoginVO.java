@@ -14,6 +14,7 @@ import java.io.Serializable;
 @NoArgsConstructor
 @AllArgsConstructor
 @ApiModel(description = "员工登录返回的数据格式")
+//视图对象,为前端展示数据提供的对象
 public class EmployeeLoginVO implements Serializable {
 
     @ApiModelProperty("主键值")
