@@ -32,7 +32,7 @@ public class JwtUtil {
                 .setClaims(claims)
                 // 设置签名使用的签名算法和签名使用的秘钥
                 .signWith(signatureAlgorithm, secretKey.getBytes(StandardCharsets.UTF_8))
-                // 设置过期时间
+                // 设置过期时间 版本
                 .setExpiration(exp);
 
         return builder.compact();
