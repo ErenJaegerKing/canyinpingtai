@@ -15,10 +15,10 @@ sky:
     host: localhost
     port: 6379
     password: 123456
-    database: 1
+    database: 0
   wechat:
     appid: wx1633ef13eac1dc11
-    secret: 9dcbc21893df036edcde346645d1c1bd
+    secret: a1ca48ecab75913b225b82a83c3e9bcf
     mchid: 561414331
     mchSerialNo: B3B3DC35414AD50B1B755BAF8DE9CC7CF407606
     privateKeyFilePath: D:\pay\apiclient_key.pem
