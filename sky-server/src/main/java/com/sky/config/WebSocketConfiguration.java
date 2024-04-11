@@ -7,12 +7,13 @@ import org.springframework.web.socket.server.standard.ServerEndpointExporter;
 
 /**
  * WebSocket配置类，用于注册WebSocket的Bean
+ * @author Jaeger_Eren
  */
 @Configuration
 @Slf4j
 public class WebSocketConfiguration {
 
-    @Bean
+//    @Bean
     public ServerEndpointExporter serverEndpointExporter() {
         log.info("用于注册WebSocket的Bean");
         return new ServerEndpointExporter();

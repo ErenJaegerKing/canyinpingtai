@@ -17,6 +17,15 @@ spring:
     port: ${sky.redis.port}
     password: ${sky.redis.password}
     database: ${sky.redis.database}
+  rabbitmq:
+    host: localhost # 主机名
+    port: 5672 # 端口
+    virtual-host: / # 虚拟主机
+    username: root # 用户名
+    password: 123456 # 密码
+    listener:
+      simple:
+        prefetch: 1 #能者多劳
 
 mybatis:
   #mapper配置文件
