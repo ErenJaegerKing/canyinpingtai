@@ -1,6 +1,7 @@
 package com.sky;
 
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.amqp.rabbit.annotation.EnableRabbit;
 import org.springframework.amqp.support.converter.Jackson2JsonMessageConverter;
 import org.springframework.amqp.support.converter.MessageConverter;
 import org.springframework.boot.SpringApplication;
@@ -16,6 +17,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @EnableCaching//开启缓存注解
 @EnableScheduling//开启任务调度
 @EnableAsync
+@EnableRabbit
 @Slf4j
 public class SkyApplication {
     public static void main(String[] args) {

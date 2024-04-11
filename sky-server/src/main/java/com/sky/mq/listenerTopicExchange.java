@@ -7,7 +7,7 @@ import org.springframework.amqp.rabbit.annotation.QueueBinding;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.stereotype.Component;
 
-@Component
+//@Component
 public class listenerTopicExchange {
     @RabbitListener(bindings = @QueueBinding(
             value = @Queue(name = "topic.queue1"),

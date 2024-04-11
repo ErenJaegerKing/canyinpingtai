@@ -26,6 +26,15 @@ spring:
     listener:
       simple:
         prefetch: 1 #能者多劳
+    publisher-returns: true #开启publish return机制
+    publisher-confirm-type: correlated #异步回调方式返回回执消息
+    connection-timeout: 1s #连接超时
+    template:
+      retry:
+        enabled: true #开启超时充试
+        initial-interval: 1000ms #设置失败等待时长为1秒
+        multiplier: 1.2 #下次失败的等待市场倍数
+        max-attempts: 3 #最大重试次数
 
 mybatis:
   #mapper配置文件
