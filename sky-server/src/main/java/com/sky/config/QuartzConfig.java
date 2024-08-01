@@ -1,11 +1,11 @@
-package com.sky.quartz;
-
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-
-@Configuration
-public class QuartzConfig {
-
+//package com.sky.quartz;
+//
+//import org.springframework.context.annotation.Bean;
+//import org.springframework.context.annotation.Configuration;
+//
+//@Configuration
+//public class QuartzConfig {
+//
 //    @Bean("jobdetail1")
 //    public JobDetail jobDetail1() {
 //        return JobBuilder.newJob(Quartz1.class)
@@ -43,5 +43,5 @@ public class QuartzConfig {
 //                .withSchedule(cronScheduleBuilder)
 //                .build();
 //    }
-
-}
+//
+//}
